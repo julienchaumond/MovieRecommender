@@ -42,10 +42,28 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
- 
+	<dependency>
+		<groupId>org.mongodb</groupId>
+		<artifactId>mongo-java-driver</artifactId>
+		<version>2.10.1</version>
+	</dependency>
+	<dependency>
+		<groupId>org.neo4j.driver</groupId>
+		<artifactId>neo4j-java-driver</artifactId>
+		<version>1.0.6</version>
+	</dependency>
 	</dependencies>
  
   <build>
     <finalName>MovieRecommender</finalName>
+    <plugins>
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<configuration>
+<source>1.8</source>
+<target>1.8</target>
+</configuration>
+</plugin>
+</plugins>
   </build>
 </project>
